@@ -1,0 +1,32 @@
+import math
+while True:
+    first = int(input('Enter first number:'))
+    third = int(input('''
+    Choose Action:
+    1. Addition 
+    2. Subtraction
+    3. Multiply
+    4. Division
+    5. Square
+    6. SquareRoot
+    7. Factorial
+    '''))
+    if third == 6:
+        print(math.sqrt(first))
+        break
+    elif third == 7:
+        print(math.factorial(first))
+        break
+    second = int(input('Enter second number:'))
+    if third==1:
+        print(first+second)
+    elif third==2:
+        print(first-second)
+    elif third==3:
+        print(first*second)
+    elif third == 4:
+        print(first/second)
+    elif third==5:
+        print(first**second)
+    else:
+        print('Invalid number')
